@@ -57,7 +57,7 @@ const RippleBackground = () => {
         const y = canvas.height / 2 + waveHeight * Math.sin(x * frequency + Date.now() / 100)
         ctx.lineTo(x, y)
       }
-      ctx.strokeStyle = 'rgba(0, 0, 255, 0.3)' // Subtle blue wave background
+      ctx.strokeStyle = 'rgba(136, 172, 224, 0.3)' // Subtle blue wave background
       ctx.lineWidth = 2
       ctx.stroke()
       ctx.closePath()
