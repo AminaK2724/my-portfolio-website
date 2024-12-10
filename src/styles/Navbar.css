@@ -1,0 +1,84 @@
+/* General Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(84, 129, 161, 0.6);
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.navbar-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar-links li {
+  position: relative; /* For dropdown positioning */
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #005de8;
+}
+
+/* Highlight Active Link */
+.active-link {
+  color: #006674;
+  font-weight: bold;
+  border-bottom: 2px solid #2c7ee3; /* Optional underline for better visibility */
+}
+
+/* Dropdown Toggle Button */
+.dropdown-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dropdown-toggle:hover {
+  color: #005de8;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: absolute;
+  top: 30px; /* Adjust based on your design */
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown li {
+  margin: 5px 0;
+}
+
+.dropdown a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.dropdown a:hover {
+  color: #00bcd4;
+}
