@@ -1,6 +1,7 @@
 // src/components/sections/Section1.js
 import React, { useState, useEffect } from 'react'
 import RippleBackground from '../common/RippleBackground'
+import Quote from "../about-me-sections/Quote"
 
 const Greeting = ({ onScroll }) => {
   const [greeting, setGreeting] = useState('')
@@ -16,6 +17,7 @@ const Greeting = ({ onScroll }) => {
         <h2 className="hero__title">{greeting}, Fellow Human!</h2>
         <p className="hero__content">Welcome to my portfolio! I'm Amina.</p>
       </div>
+      <Quote />
       <a
         href="#section-2"
         onClick={e => {
