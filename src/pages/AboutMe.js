@@ -55,7 +55,7 @@ export const AboutMe = () => {
             <p className="hero__content">{section.content}</p>
           </div>
           {index === 0 && (
-            <a onClick={() => handleScrollToSection('section-2')}  className="learn-more-btn">
+            <a href="section-2" onClick={() => handleScrollToSection('section-2')}  className="learn-more-btn">
               Learn More About Me →
             </a>
           )}
