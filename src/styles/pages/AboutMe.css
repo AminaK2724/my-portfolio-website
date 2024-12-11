@@ -20,7 +20,7 @@
 
 /* First Section: Nature Background */
 .hero.nature {
-  background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdhdGVyfGVufDB8fHx8MTY5NDY0ODQ4OQ&ixlib=rb-4.0.3&q=80&w=1920");
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdhdGVyfGVufDB8fHx8MTY5NDY0ODQ4OQ&ixlib=rb-4.0.3&q=80&w=1920');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -28,7 +28,7 @@
 }
 
 .hero.nature::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -60,7 +60,7 @@
 
 /* Title Styling */
 .hero__title {
-  font-family: "Courgette", serif;
+  font-family: 'Courgette', serif;
   font-size: 4rem;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for better contrast */
@@ -68,7 +68,7 @@
 
 /* Content Text */
 .hero__content {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
   line-height: 1.8;
   color: #f0f0f0; /* Light gray text */
@@ -79,15 +79,13 @@
   position: absolute;
   bottom: 20px;
   right: 20px;
-  /* padding: 10px 20px; */
   margin: 25px;
   font-size: 1rem;
   font-weight: bold;
   color: #ffffff; /* White text */
-  /* background-color: #007bff; Blue background */
   border: none;
   border-radius: 5px;
-  text-decoration: none;
+  text-decoration: underline;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   transition: background-color 0.3s ease, transform 0.3s ease;
   z-index: 3; /* Ensure button appears above everything */
