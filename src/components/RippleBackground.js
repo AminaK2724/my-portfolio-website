@@ -83,7 +83,7 @@ const RippleBackground = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height)
 
       // Draw water background
-      ctx.fillStyle = 'rgba(0, 100, 200, 0.3)'
+      ctx.fillStyle = 'rgba(22, 50, 91, 0.3)'
       ctx.fillRect(0, 0, canvas.width, canvas.height)
 
       // Draw waves
