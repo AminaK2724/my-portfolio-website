@@ -1,5 +1,6 @@
 // src/components/sections/Section2.js
 import React from 'react'
+import '../../styles/components/about-me-sections/Intro.css'
 
 const Intro = () => {
   return (

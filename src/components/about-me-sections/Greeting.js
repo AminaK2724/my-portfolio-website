@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import RippleBackground from '../common/RippleBackground'
 import Quote from "../about-me-sections/Quote"
+import '../../styles/components/about-me-sections/Greeting.css'
 
 const Greeting = ({ onScroll }) => {
   const [greeting, setGreeting] = useState('')

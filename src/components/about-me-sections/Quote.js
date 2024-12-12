@@ -5,7 +5,7 @@ const Quote = () => {
     'Be stronger than your excuses.',
     'Success is not for the lazy.',
     'Dream big and dare to fail.',
-    // 'Push yourself, because no one else will.',
+    'Push yourself, because no one else will.',
     'Your limitation—it’s only your imagination.',
     'The best time for new beginnings is now.',
   ]

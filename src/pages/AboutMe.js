@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import '../styles/pages/AboutMe.css'
 import { Navbar } from '../components/common/Navbar'
 import Greeting from '../components/about-me-sections/Greeting'

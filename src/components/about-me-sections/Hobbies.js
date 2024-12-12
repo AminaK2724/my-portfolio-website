@@ -1,5 +1,6 @@
 // src/components/sections/Section3.js
 import React from 'react'
+import '../../styles/components/about-me-sections/Hobbies.css'
 
 const Hobbies = () => {
   return (
