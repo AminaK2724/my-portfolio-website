@@ -4,6 +4,7 @@ import { Navbar } from '../components/common/Navbar'
 import Greeting from '../components/about-me-sections/Greeting'
 import Intro from '../components/about-me-sections/Intro'
 import Hobbies from '../components/about-me-sections/Hobbies'
+import Timeline from '../components/about-me-sections/Timeline'
 
 export const AboutMe = () => {
   const handleScrollToSection = id => {
@@ -19,6 +20,7 @@ export const AboutMe = () => {
       <Greeting onScroll={handleScrollToSection} />
       <Intro />
       <Hobbies />
+      {/* <Timeline/> */}
     </div>
   )
 }

@@ -29,7 +29,7 @@ export const Navbar = () => {
       <ul className="navbar-links">
         <li>
           <Link to="/" className={location.pathname === '/' ? 'active-link' : ''}>
-            About Me
+            Hi!
           </Link>
         </li>
         <li>
