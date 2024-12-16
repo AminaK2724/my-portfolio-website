@@ -1,7 +1,6 @@
 import React from 'react'
 import '../styles/pages/AboutMe.css'
 import { Navbar } from '../components/common/Navbar'
-import Greeting from '../pages/Greeting'
 import AllRoutesButton from '../components/extras/AllRoutesBtn'
 import RippleBackground from '../components/common/RippleBackground'
 

@@ -1,28 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import '../../styles/components/common/Navbar.css'
 
 export const Navbar = () => {
-  const [dropdownOpen, setDropdownOpen] = useState(false)
-  const dropdownRef = useRef(null)
   const location = useLocation() // Get the current path
-
-  const toggleDropdown = () => {
-    setDropdownOpen(prev => !prev)
-  }
-
-  const handleClickOutside = event => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-      setDropdownOpen(false)
-    }
-  }
-
-  useEffect(() => {
-    document.addEventListener('mousedown', handleClickOutside)
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside)
-    }
-  }, [])
 
   return (
     <nav className="navbar">

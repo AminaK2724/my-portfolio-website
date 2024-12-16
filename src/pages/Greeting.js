@@ -8,8 +8,6 @@ const Greeting = ({ onScroll }) => {
   const [isVisible, setIsVisible] = useState(false)
   const titleRef = useRef(null)
   const [greeting, setGreeting] = useState('')
-
-  const greetingText = greeting + 'Hi'
   const heroTitle = greeting + ', Fellow Human!'
 
   useEffect(() => {

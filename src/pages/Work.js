@@ -2,7 +2,6 @@ import React from 'react'
 import '../styles/pages/Work.css'
 import { Navbar } from '../components/common/Navbar'
 import AllRoutesButton from '../components/extras/AllRoutesBtn'
-import RippleBackground from '../components/common/RippleBackground'
 
 const projects = [
   {
