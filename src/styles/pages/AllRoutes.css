@@ -1,0 +1,124 @@
+/* All Routes Page Container */
+.all-routes-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the left */
+  justify-content: center;
+  padding: 0 20%;
+  height: 100vh;
+  background: radial-gradient(circle, #5aa5c3, #0c6881, #072451);
+  background-size: 300% 300%;
+  animation: cornerMotion 10s linear infinite;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header Styling */
+.all-routes-page h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 5px #00e0ff, 0 0 10px #00e0ff, 0 0 20px #00e0ff;
+}
+
+/* Links Container */
+.all-routes-page ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Links Styling */
+.all-routes-page li {
+  margin: 1rem 0; /* Add spacing between links */
+  opacity: 0; /* Start invisible */
+  transform: translateX(-50px); /* Start slightly off-screen to the left */
+  animation: slideIn 1s forwards; /* Animation to bring it in */
+}
+
+/* Sequential Animation Delay */
+.all-routes-page li:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.all-routes-page li:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.all-routes-page li:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+.all-routes-page li:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+/* Link Style */
+.all-routes-page a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #00e0ff;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.all-routes-page a:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Slide In Animation */
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Bring into normal position */
+  }
+}
+
+/* Background Motion */
+@keyframes cornerMotion {
+  0% {
+    background-position: top left;
+  }
+  25% {
+    background-position: top right;
+  }
+  50% {
+    background-position: bottom right;
+  }
+  75% {
+    background-position: bottom left;
+  }
+  100% {
+    background-position: top left;
+  }
+}
+
+.gradient {
+  position: relative;
+  scroll-snap-type: y mandatory; /* Enable vertical snapping */
+  overflow-y: auto; /* Allow vertical scrolling */
+  height: 100vh; /* Full viewport height */
+  background: radial-gradient(circle, #5aa5c3, #0c6881, #072451); /* Circular gradient */
+  background-size: 300% 300%; /* Larger than viewport to allow animation */
+  animation: cornerMotion 10s linear infinite; /* Infinite animation moving between corners */
+  color: white;
+}
+
+/* Corner-to-corner Motion Animation */
+@keyframes cornerMotion {
+  0% {
+    background-position: top left; /* Start at top-left */
+  }
+  25% {
+    background-position: top right; /* Move to top-right */
+  }
+  50% {
+    background-position: bottom right; /* Move to bottom-right */
+  }
+  75% {
+    background-position: bottom left; /* Move to bottom-left */
+  }
+  100% {
+    background-position: top left; /* Return to top-left */
+  }
+}

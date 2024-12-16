@@ -1,0 +1,167 @@
+.about-me {
+  position: relative;
+  overflow-y: auto; /* Allow vertical scrolling */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Reset margins for proper alignment */
+  padding: 0;
+  background: radial-gradient(circle, #5aa5c3, #0c6881, #072451); /* Circular gradient */
+  background-size: 300% 300%; /* Larger than viewport to allow animation */
+  animation: cornerMotion 10s linear infinite; /* Infinite animation moving between corners */
+  color: white;
+}
+
+/* Corner-to-corner Motion Animation */
+@keyframes cornerMotion {
+  0% {
+    background-position: top left; /* Start at top-left */
+  }
+  25% {
+    background-position: top right; /* Move to top-right */
+  }
+  50% {
+    background-position: bottom right; /* Move to bottom-right */
+  }
+  75% {
+    background-position: bottom left; /* Move to bottom-left */
+  }
+  100% {
+    background-position: top left; /* Return to top-left */
+  }
+}
+
+/* Section Styling */
+.content-sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-sections > section {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Intro Section */
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 3rem 0;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  color: #fff;
+}
+
+/* Intro Header */
+.intro-header {
+  text-align: center;
+  margin: 3rem 2rem;
+}
+
+.intro-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.intro-description {
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  color: #ddd;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem; /* Space between cards */
+  margin: 0 auto;
+  padding: 0 150px 150px 150px;
+  box-sizing: border-box;
+  width: 80%;
+}
+
+/* Project Card */
+.project-card {
+  position: relative;
+  background-color: #000a4f; /* Dark background for cards */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(calc(var(--staggered-offset, 0px))); /* Staggered layout */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:nth-child(even) {
+  --staggered-offset: 10px; /* Offset even rows */
+}
+
+.project-card:nth-child(odd) {
+  --staggered-offset: -10px; /* Offset odd rows */
+}
+
+.project-card:hover {
+  transform: translateY(0) scale(1.05); /* Slightly lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Placeholder for Preview */
+.project-preview-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  background-color: #12275b; /* A slightly lighter shade of blue */
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Hover Overlay */
+.project-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project-card:hover .project-hover-overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+/* Project Title */
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+/* Project Description */
+.project-description {
+  font-size: 1rem;
+  color: #ddd;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}

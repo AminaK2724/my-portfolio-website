@@ -1,26 +1,24 @@
 import React from 'react'
 import '../styles/pages/AboutMe.css'
 import { Navbar } from '../components/common/Navbar'
-import Greeting from '../components/about-me-sections/Greeting'
-import Intro from '../components/about-me-sections/Intro'
-import Hobbies from '../components/about-me-sections/Hobbies'
-import Timeline from '../components/about-me-sections/Timeline'
+import Greeting from '../pages/Greeting'
+import AllRoutesButton from '../components/extras/AllRoutesBtn'
+import RippleBackground from '../components/common/RippleBackground'
 
 export const AboutMe = () => {
-  const handleScrollToSection = id => {
-    const section = document.getElementById(id)
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    }
-  }
+  // const handleScrollToSection = id => {
+  //   const section = document.getElementById(id)
+  //   if (section) {
+  //     section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  //   }
+  // }
 
   return (
     <div className="about-me">
+      <RippleBackground />
       <Navbar />
-      <Greeting onScroll={handleScrollToSection} />
-      <Intro />
-      <Hobbies />
-      {/* <Timeline/> */}
+      <AllRoutesButton />
+      <section>Coming Soon</section>
     </div>
   )
 }

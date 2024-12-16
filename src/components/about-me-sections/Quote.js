@@ -19,7 +19,7 @@ const Quote = () => {
   return (
     <div className="quote">
       <p>"{currentQuote.text}"</p>
-      <p>- {currentQuote.author}</p>
+      <p className='quote-author'>- {currentQuote.author}</p>
     </div>
   )
 }
