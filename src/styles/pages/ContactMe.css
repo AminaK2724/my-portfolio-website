@@ -1,0 +1,77 @@
+.contact-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image: url('https://images.unsplash.com/photo-1517817192071-5dd0eb470a65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-color 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth fade */
+  opacity: var(--bg-opacity); /* Dynamically controlled opacity */
+}
+
+/* Container styling */
+.container {
+  width: 700px;
+  height: 350px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: 1.5s ease-in-out;
+  position: relative;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.side {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px 50px;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  color: white;
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  transform: rotateY(180deg);
+  z-index: 0;
+}
+
+.container:hover {
+  transform: rotateY(180deg);
+}
+
+form input,
+form textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #444;
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+form input[type='submit'] {
+  display: block;
+  width: auto;
+  margin: 10px auto;
+  padding: 5px 10px;
+  border: 3px solid #555;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type='submit']:hover {
+  background-color: #4d85f5;
+}

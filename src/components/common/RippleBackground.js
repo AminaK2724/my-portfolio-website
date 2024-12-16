@@ -48,19 +48,26 @@ const RippleBackground = () => {
       }
     }
 
-    // Draw background waves
+    // Draw multiple background waves
     const drawWaves = () => {
-      ctx.beginPath()
-      const waveHeight = 10
-      const frequency = 0.02
-      for (let x = 0; x <= canvas.width; x += 20) {
-        const y = canvas.height / 2 + waveHeight * Math.sin(x * frequency + Date.now() / 100)
-        ctx.lineTo(x, y)
-      }
-      ctx.strokeStyle = 'rgba(136, 172, 224, 0.3)' // Subtle blue wave background
-      ctx.lineWidth = 2
-      ctx.stroke()
-      ctx.closePath()
+      const waveConfigs = [
+        { waveHeight: 15, frequency: 0.015, opacity: 0.2 },
+        { waveHeight: 20, frequency: 0.02, opacity: 0.3 },
+        { waveHeight: 10, frequency: 0.025, opacity: 0.15 },
+        { waveHeight: 25, frequency: 0.01, opacity: 0.25 },
+      ]
+
+      waveConfigs.forEach(config => {
+        ctx.beginPath()
+        for (let x = 0; x <= canvas.width; x += 20) {
+          const y = canvas.height / 2 + config.waveHeight * Math.sin(x * config.frequency + Date.now() / 800)
+          ctx.lineTo(x, y)
+        }
+        ctx.strokeStyle = `rgba(136, 172, 224, ${config.opacity})`
+        ctx.lineWidth = 2
+        ctx.stroke()
+        ctx.closePath()
+      })
     }
 
     // Mouse Events
@@ -83,7 +90,7 @@ const RippleBackground = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height)
 
       // Draw water background
-      ctx.fillStyle = 'rgba(22, 50, 91, 0.3)'
+      ctx.fillStyle = 'transparent'
       ctx.fillRect(0, 0, canvas.width, canvas.height)
 
       // Draw waves
@@ -110,3 +117,4 @@ const RippleBackground = () => {
 }
 
 export default RippleBackground
+

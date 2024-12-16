@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import '../styles/Navbar.css'
+import '../../styles/components/common/Navbar.css'
 
 export const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false)
@@ -27,14 +27,17 @@ export const Navbar = () => {
   return (
     <nav className="navbar">
       <ul className="navbar-links">
+        <li className={location.pathname === '/' ? 'active' : ''}>
+          <Link to="/">Home</Link>
+        </li>
         <li>
-          <Link to="/" className={location.pathname === '/' ? 'active-link' : ''}>
-            About Me
+          <Link to="/work" className={location.pathname === '/work' ? 'active-link' : ''}>
+            Work
           </Link>
         </li>
         <li>
-          <Link to="/projects" className={location.pathname === '/projects' ? 'active-link' : ''}>
-            Projects
+          <Link to="/about-me" className={location.pathname === '/about-me' ? 'active-link' : ''}>
+            About Me
           </Link>
         </li>
         <li>
@@ -42,7 +45,7 @@ export const Navbar = () => {
             Contact Me
           </Link>
         </li>
-        <li className="dropdown-container" ref={dropdownRef}>
+        {/* <li className="dropdown-container" ref={dropdownRef}>
           <button className="dropdown-toggle" onClick={toggleDropdown}>
             Links
           </button>
@@ -65,7 +68,7 @@ export const Navbar = () => {
               </li>
             </ul>
           )}
-        </li>
+        </li> */}
       </ul>
     </nav>
   )

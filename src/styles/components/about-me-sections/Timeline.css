@@ -1,0 +1,67 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: linear-gradient(to right, black 25%, #1d1515, black 75%);
+  display: grid;
+  justify-items: center;
+  perspective: 600px;
+  perspective-origin: center center;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.box {
+  background: linear-gradient(to right, white 70%, #b9b0b0);
+  width: 100vw;
+  height: 300px;
+  transform-style: preserve-3d;
+  transform: translateX(-50%) rotateY(65deg);
+  transform-origin: right center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.box2 {
+  background: linear-gradient(to left, white 70%, #b9b0b0);
+  transform: translateX(50%) rotateY(-65deg);
+  transform-origin: left center;
+}
+
+.timeline-content {
+  transform: translateZ(50px);
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+}
+
+.timeline-year {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.timeline-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.timeline-description {
+  font-size: 1rem;
+  color: #555;
+}

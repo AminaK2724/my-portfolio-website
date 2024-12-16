@@ -1,0 +1,23 @@
+/* Button for All Routes Page */
+.all-routes-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000; /* Ensure button stays on top */
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  color: #00e0ff;
+  background: transparent;
+  border: none;
+  text-shadow: 0 0 5px #00e0ff, 0 0 10px #00e0ff;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.all-routes-btn:hover {
+  color: #072451;
+  background: #00e0ff;
+  box-shadow: 0 0 10px #00e0ff, 0 0 20px #00e0ff;
+  transform: scale(1.1);
+}
