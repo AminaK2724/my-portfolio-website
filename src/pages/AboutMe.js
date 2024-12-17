@@ -1,23 +1,14 @@
 import React from 'react'
-import '../styles/pages/AboutMe.css'
-import { Navbar } from '../components/common/Navbar'
-import AllRoutesButton from '../components/extras/AllRoutesBtn'
 import RippleBackground from '../components/common/RippleBackground'
+import { Navbar } from '../components/common/Navbar'
 
-export const AboutMe = () => {
-  // const handleScrollToSection = id => {
-  //   const section = document.getElementById(id)
-  //   if (section) {
-  //     section.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  //   }
-  // }
-
+const AboutMe = () => {
   return (
-    <div className="about-me">
-      <RippleBackground />
+    <div>
       <Navbar />
-      <AllRoutesButton />
-      <section>Coming Soon</section>
+      <RippleBackground />
     </div>
   )
 }
+
+export default AboutMe

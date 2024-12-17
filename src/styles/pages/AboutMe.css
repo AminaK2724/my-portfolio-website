@@ -1,50 +1,28 @@
 .about-me {
   position: relative;
-  scroll-snap-type: y mandatory; /* Enable vertical snapping */
-  overflow-y: auto; /* Allow vertical scrolling */
-  height: 100vh; /* Full viewport height */
-  margin: 0; /* Reset margins for proper alignment */
-  padding: 0;
-  background: radial-gradient(circle, #5aa5c3, #0c6881, #072451); /* Circular gradient */
-  background-size: 300% 300%; /* Larger than viewport to allow animation */
-  animation: cornerMotion 10s linear infinite; /* Infinite animation moving between corners */
-  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center; 
+  background: radial-gradient(circle, #5aa5c3, #0c6881, #072451);
+  background-size: 300% 300%;
+  animation: cornerMotion 10s linear infinite;
+  overflow: hidden;
 }
 
-/* Corner-to-corner Motion Animation */
 @keyframes cornerMotion {
   0% {
-    background-position: top left; /* Start at top-left */
+    background-position: top left;
   }
   25% {
-    background-position: top right; /* Move to top-right */
+    background-position: top right;
   }
   50% {
-    background-position: bottom right; /* Move to bottom-right */
+    background-position: bottom right;
   }
   75% {
-    background-position: bottom left; /* Move to bottom-left */
+    background-position: bottom left;
   }
   100% {
-    background-position: top left; /* Return to top-left */
+    background-position: top left;
   }
-}
-
-/* Section Styling */
-.content-sections {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.content-sections > section {
-  position: relative;
-  width: 100%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  padding: 20px;
-  box-sizing: border-box;
 }

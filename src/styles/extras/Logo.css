@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #000; /* Optional: Add a background for better visibility */
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+#logo path {
+  stroke: #5aa5c3; /* Color for the stroke */
+  stroke-width: 2; /* Adjust the stroke thickness */
+  fill: transparent; /* Initially transparent */
+  stroke-dasharray: 3974;
+  stroke-dashoffset: 3974;
+  animation: 
+    line-anim 5s ease forwards 0.3s, /* Stroke animation */
+    fill 2s ease forwards 5.3s; /* Fill animation starts after stroke completes */
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #5aa5c3; /* Fill color for the path */
+  }
+}

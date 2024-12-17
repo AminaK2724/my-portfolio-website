@@ -1,0 +1,91 @@
+.about-me {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center; 
+  background: radial-gradient(circle, #5aa5c3, #0c6881, #072451);
+  background-size: 300% 300%;
+  animation: cornerMotion 10s linear infinite;
+  overflow: hidden;
+}
+
+.about-me-content {
+  position: relative;
+  right: 0;
+  width: 50%; 
+  padding: 2rem;
+  left: 45%;
+  z-index: 2; 
+  color: white;
+}
+
+.about-me-text {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.about-me-heading {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  font-family: 'Alex Brush', cursive;
+  color: #072451;
+  text-shadow: 0 0 30px #5aa5c3;
+  display: inline-block; 
+}
+
+.about-me-heading span {
+  display: inline-block;
+  opacity: 0;
+  animation: fade-in 0.5s ease forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-me-description {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  font-family: 'Roboto', sans-serif;
+}
+
+@keyframes cornerMotion {
+  0% {
+    background-position: top left;
+  }
+  25% {
+    background-position: top right;
+  }
+  50% {
+    background-position: bottom right;
+  }
+  75% {
+    background-position: bottom left;
+  }
+  100% {
+    background-position: top left;
+  }
+}
+
+.hero-btn {
+  position: relative;
+  z-index: 10;
+  padding: 0 4rem 0 0;
+  font-size: 20px;
+  color: #ffffff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-btn:hover {
+  transform: scale(1.1);
+  color: #5eb2d3;
+}
