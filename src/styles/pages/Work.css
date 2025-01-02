@@ -1,12 +1,10 @@
-.about-me {
+.bg {
   position: relative;
   overflow-y: auto; /* Allow vertical scrolling */
   height: 100vh; /* Full viewport height */
   margin: 0; /* Reset margins for proper alignment */
   padding: 0;
-  background: radial-gradient(circle, #5aa5c3, #0c6881, #072451); /* Circular gradient */
-  background-size: 300% 300%; /* Larger than viewport to allow animation */
-  animation: cornerMotion 10s linear infinite; /* Infinite animation moving between corners */
+  background: radial-gradient(circle, #5aa5c3, #0c6881, #072451); 
   color: white;
 }
 
@@ -149,19 +147,36 @@
   opacity: 1; /* Show overlay on hover */
 }
 
+.project-tags {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-tag {
+  background-color: #333;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
 /* Project Title */
-.project-title {
-  font-size: 1.5rem;
+.projects-title {
+  font-size: 1.6rem;
   margin-bottom: 0.5rem;
   color: #fff;
   font-family: 'Roboto', sans-serif;
-  text-align: center;
+  padding: 0 20px;
+  align-content: center;
 }
 
 /* Project Description */
-.project-description {
+.projects-description {
   font-size: 1rem;
   color: #ddd;
   font-family: 'Roboto', sans-serif;
-  text-align: center;
+  padding: 0 20px;
 }

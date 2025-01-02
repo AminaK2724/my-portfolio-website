@@ -1,15 +1,28 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import '../../styles/extras/AllRoutesBtn.css'
 
-const AllRoutesBtn = () => {
-  const location = useLocation() // Get the current route
-  const isOnAllRoutesPage = location.pathname === '/AllRoutes'
+const AllRoutesBtn = ({ onGoBack, onNavigate }) => {
+  const location = useLocation()
+  const navigate = useNavigate()
+
+  const handleClick = () => {
+    if (location.pathname === '/AllRoutes') {
+      if (onGoBack) {
+        onGoBack() // Trigger slide-out animation
+      }
+    } else {
+      if (onNavigate) {
+        onNavigate() // Trigger slide-in animation
+      }
+      navigate('/AllRoutes') // Navigate to All Routes
+    }
+  }
 
   return (
-    <a href={isOnAllRoutesPage ? '/' : '/AllRoutes'} className="all-routes-btn">
-      {isOnAllRoutesPage ? 'Go Back' : 'All Routes →'}
-    </a>
+    <button onClick={handleClick} className="all-routes-btn">
+      {location.pathname === '/AllRoutes' ? 'Go Back' : 'All Routes →'}
+    </button>
   )
 }
 

@@ -1,12 +1,5 @@
 .about-me {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center; 
-  background: radial-gradient(circle, #5aa5c3, #0c6881, #072451);
-  background-size: 300% 300%;
-  animation: cornerMotion 10s linear infinite;
-  overflow: hidden;
+  background-color: #021526;
 }
 
 @keyframes cornerMotion {
@@ -25,4 +18,70 @@
   100% {
     background-position: top left;
   }
+}
+
+.me-heading {
+  color: #00e0ff;
+  text-shadow: 0 0 5px #00e0ff, 0 0 10px #00e0ff;
+}
+
+.me-description {
+  color: #ffffff;
+}
+
+/* Me Section */
+.me {
+  display: flex;
+  background-color: #021526;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 10%;
+  height: 100vh;
+}
+
+.me-content {
+  flex: 1;
+  text-align: left;
+}
+
+.me-heading {
+  font-size: 3rem;
+  font-family: 'Alex Brush', cursive;
+  margin-bottom: 1.5rem;
+}
+
+.me-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.me-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.me-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Timeline Section */
+.timeline {
+  padding: 5rem 10%;
+  background: #021526;
+  overflow-y: auto;
+}
+
+.timeline-item {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

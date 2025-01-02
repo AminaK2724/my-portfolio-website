@@ -1,10 +1,11 @@
 import React from 'react'
 import { createBrowserRouter } from 'react-router-dom'
-import {Home} from './pages/Home'
+import { Home } from './pages/Home'
 import Work from './pages/Work'
 import ContactMe from './pages/ContactMe'
 import AllRoutes from './pages/AllRoutes'
 import AboutMe from './pages/AboutMe'
+import ProjectPage from './pages/ProjectPage'
 
 export const router = createBrowserRouter([
   {
@@ -26,5 +27,9 @@ export const router = createBrowserRouter([
   {
     path: '/AllRoutes',
     element: <AllRoutes />,
+  },
+  {
+    path: '/projects/:projectId',
+    element: <ProjectPage />,
   },
 ])
