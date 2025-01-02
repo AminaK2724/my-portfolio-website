@@ -113,8 +113,9 @@ const RippleBackground = () => {
     }
   }, [])
 
-  return <canvas ref={canvasRef} style={{ position: 'absolute', top: 0, left: 0, zIndex: 0 }} />
+  return (
+    <canvas className="ripple-background" ref={canvasRef} style={{ position: 'fixed', top: 0, left: 0, zIndex: 0 }} />
+  )
 }
 
 export default RippleBackground
-

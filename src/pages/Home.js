@@ -5,12 +5,13 @@ import RippleBackground from '../components/common/RippleBackground'
 import Logo from '../components/extras/Logo'
 
 export const Home = () => {
-  const headingText = 'Hello, I\'m Amina.'
+  const headingText = "Hello, I'm Amina."
 
   return (
     <div className="about-me">
-      <RippleBackground />
       <AllRoutesButton />
+      <RippleBackground />
+
       <div className="about-me-logo">
         <Logo />
       </div>

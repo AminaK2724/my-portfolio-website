@@ -4,7 +4,7 @@
   height: 100vh; /* Full viewport height */
   margin: 0; /* Reset margins for proper alignment */
   padding: 0;
-  background: radial-gradient(circle, #5aa5c3, #0c6881, #072451); 
+  background: radial-gradient(circle, #5aa5c3, #0c6881, #072451);
   color: white;
 }
 
@@ -80,12 +80,28 @@
 /* Projects Grid */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 2rem; /* Space between cards */
   margin: 0 auto;
   padding: 0 150px 150px 150px;
   box-sizing: border-box;
   width: 80%;
+}
+
+/* Tablet and Laptop View: 2 cards per row */
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    padding: 0 150px 150px 150px;
+  }
+}
+
+/* Monitor View: 3 cards per row */
+@media (min-width: 1500px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+    padding: 0 150px 150px 150px;
+  }
 }
 
 /* Project Card */
@@ -179,4 +195,5 @@
   color: #ddd;
   font-family: 'Roboto', sans-serif;
   padding: 0 20px;
+  text-align: center;
 }

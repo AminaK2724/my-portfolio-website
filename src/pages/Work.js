@@ -2,6 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import '../styles/pages/Work.css'
 import AllRoutesButton from '../components/extras/AllRoutesBtn'
+import RippleBackground from '../components/common/RippleBackground'
 
 const projects = [
   {
@@ -25,24 +26,55 @@ const projects = [
     tags: ['Algorithm', 'Compression', 'Spring Boot'],
   },
   {
-    id: 'e-commerce-website',
-    title: 'E-Commerce Website',
+    id: 'planner-web-app',
+    title: 'Cohesive Planner Web App',
+    category: 'Project',
+    year: '2024',
+    description:
+      'An intuitive planner designed for ADHD individuals to streamline tasks and stay organized effortlessly.',
+    redirectUrl: '/projects/planner-web-app',
+    images: '',
+    tags: ['Task Management', 'Productivity', 'Web Application'],
+  },
+  {
+    id: 'svg-animation-generator',
+    title: 'SVG Animation Generator',
     category: 'Web Application',
     year: '2022',
-    description: 'A mock online store with modern UI/UX and seamless checkout features.',
-    redirectUrl: '/projects/e-commerce-website',
-    images: '/images/image2.png',
+    description: 'An fun and interactive svg path animation generator',
+    redirectUrl: '/projects/svg-animation-generator',
+    images: '',
     tags: ['E-Commerce', 'UI/UX', 'React'],
   },
   {
-    id: 'e-commerce-website',
-    title: 'E-Commerce Website',
-    category: 'Web Application',
+    id: 'maps-design',
+    title: 'Upgraded Map App',
+    category: 'UI/UX',
     year: '2022',
     description: 'A mock online store with modern UI/UX and seamless checkout features.',
-    redirectUrl: '/projects/e-commerce-website',
-    images: '/images/flowchart.png',
-    tags: ['Flowchart', 'Web Design', 'Prototyping'],
+    redirectUrl: '/projects/maps-design',
+    images: '',
+    tags: ['Wireframe', 'Web Design', 'Prototyping'],
+  },
+  {
+    id: 'ripple-bg-npm',
+    title: 'Reusable Ripple Background',
+    category: 'Tool',
+    year: '2024',
+    description: 'A reusable background to make your webpages more interactive',
+    redirectUrl: '/projects/ripple-bg-npm',
+    images: '/images/ripple-bg-preview.png',
+    tags: ['NPM Package', 'Web Dev', 'Interactive Design'],
+  },
+  {
+    id: 'all-routes-btn-npm',
+    title: 'Reusable Routes Button',
+    category: 'Tool',
+    year: '2024',
+    description: 'A reusable button to seamlessly navigate across all available routes in your application.',
+    redirectUrl: '/projects/all-routes-btn-npm',
+    images: '',
+    tags: ['NPM Package', 'Navigation Tool', 'Reusable Component'],
   },
 ]
 
@@ -56,6 +88,7 @@ const Work = () => {
   return (
     <div className="work-page bg">
       <section className="intro-section">
+        <RippleBackground />
         <header className="intro-header">
           <h2 className="intro-title">Projects</h2>
           <p className="intro-description">A collection of my work demonstrating technical skills and creativity.</p>
