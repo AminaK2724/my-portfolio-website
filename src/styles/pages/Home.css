@@ -2,7 +2,7 @@
   position: relative;
   height: 100vh;
   display: flex;
-  align-items: center; 
+  align-items: center;
   background: radial-gradient(circle, #5aa5c3, #0c6881, #072451);
   background-size: 300% 300%;
   animation: cornerMotion 10s linear infinite;
@@ -11,12 +11,26 @@
 
 .about-me-content {
   position: relative;
-  right: 0;
-  width: 50%; 
-  padding: 2rem;
-  left: 45%;
-  z-index: 2; 
+  left: 5%;
+  width: 90%; /* Full width for smaller screens */
+  padding: 1rem;
+  z-index: 2;
   color: white;
+  text-align: center; /* Center-align text for smaller screens */
+}
+
+@media (min-width: 1200px) {
+  /* Desktop and larger screens */
+  .about-me-content {
+    position: relative;
+    right: 0;
+    width: 50%;
+    padding: 2rem;
+    left: 45%;
+    z-index: 2;
+    color: white;
+    text-align: left; /* Center-align text for smaller screens */
+  }
 }
 
 .about-me-text {
@@ -31,7 +45,7 @@
   font-family: 'Alex Brush', cursive;
   color: #072451;
   text-shadow: 0 0 30px #5aa5c3;
-  display: inline-block; 
+  display: inline-block;
 }
 
 .about-me-heading span {

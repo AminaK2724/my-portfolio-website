@@ -83,13 +83,21 @@
   grid-template-columns: 1fr;
   gap: 2rem; /* Space between cards */
   margin: 0 auto;
-  padding: 0 150px 150px 150px;
+  padding: 0 50px 50px 50px;
   box-sizing: border-box;
   width: 80%;
 }
 
 /* Tablet and Laptop View: 2 cards per row */
 @media (min-width: 768px) {
+  .projects-grid {
+  grid-template-columns: 1fr;
+    padding: 0 150px 150px 150px;
+  }
+}
+
+/* Tablet and Laptop View: 2 cards per row */
+@media (min-width: 1000px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr); /* Two cards per row */
     padding: 0 150px 150px 150px;

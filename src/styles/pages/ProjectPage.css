@@ -177,3 +177,26 @@
   font-weight: bold;
   white-space: nowrap;
 }
+
+.projects-back {
+  position: fixed;
+  top: 20px;
+  left: 20px; /* Place it on the top left corner */
+  z-index: 1000; /* Ensure button stays on top */
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  color: #00e0ff;
+  background: transparent;
+  border: none;
+  text-shadow: 0 0 5px #00e0ff, 0 0 10px #00e0ff;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.projects-back:hover {
+  color: #072451;
+  background: #00e0ff;
+  box-shadow: 0 0 10px #00e0ff, 0 0 20px #00e0ff;
+  transform: scale(1.1);
+}

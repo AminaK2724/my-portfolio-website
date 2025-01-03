@@ -112,6 +112,9 @@ const ProjectPage = () => {
     <div className="bg">
       <div className="project-page">
         <AllRoutesButton />
+        <Link to="/work" className="projects-back">
+         ← Projects
+        </Link>
         <section className="project-container">
           {/* Header Section */}
           <header className="project-header">
@@ -128,11 +131,11 @@ const ProjectPage = () => {
             <div className="project-meta-wrapper">
               <div className="project-left">
                 <div className="project-meta">
-                  <p className='meta-category'>
+                  <p className="meta-category">
                     <span className="meta-title">Category: </span>
                     {project.category}
                   </p>
-                  <p className='meta-category'>
+                  <p className="meta-category">
                     <span className="meta-title">Year: </span>
                     {project.year}
                   </p>
