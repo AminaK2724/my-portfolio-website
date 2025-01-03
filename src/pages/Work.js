@@ -23,7 +23,17 @@ const projects = [
     description: 'A simple Huffman coding application for encoding and decoding.',
     redirectUrl: '/projects/huffman-code-app',
     images: '/images/huffman-preview.png',
-    tags: ['Algorithm', 'Compression', 'Spring Boot'],
+    tags: ['Full Stack', 'Algorithm', 'Spring Boot'],
+  },
+  {
+    id: 'rpg-game',
+    title: 'RPG Game Simulator',
+    category: 'Full Stack Application',
+    year: '2022',
+    description: 'An interactive huffman encoding and decoding platform.',
+    redirectUrl: '/projects/hrpg-game',
+    images: '',
+    tags: ['Full Stack', 'Game', 'Spring Boot'],
   },
   {
     id: 'planner-web-app',

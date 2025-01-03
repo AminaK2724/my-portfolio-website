@@ -1,14 +1,14 @@
 import React from 'react'
 import RippleBackground from '../components/common/RippleBackground'
-import { Navbar } from '../components/common/Navbar'
 import Timeline from '../components/about-me-sections/Timeline'
 import '../styles/pages/AboutMe.css'
+import AllRoutesButton from '../components/extras/AllRoutesBtn'
 
 const AboutMe = () => {
   return (
     <div>
-      <Navbar />
       <RippleBackground />
+      <AllRoutesButton />
       <section className="me">
         <div className="me-content">
           <h1 className="me-heading">Hello, I'm Amina</h1>
@@ -18,7 +18,7 @@ const AboutMe = () => {
           </p>
         </div>
         <div className="me-image">
-          <img src="/path-to-your-image.jpg" alt="Amina" />
+          <img src="/images/amina-profile.png" alt="Amina" />
         </div>
       </section>
       <section className="timeline">

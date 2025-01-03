@@ -18,13 +18,36 @@ const projects = [
   {
     id: 'huffman-code',
     title: 'Simple Huffman Coding Platform',
-    category: 'Web Application',
+    category: 'Full Stack Application',
     year: '2022',
     description: 'An interactive huffman encoding and decoding platform.',
     redirectUrl: '/projects/huffman-code-app',
     images: ['/images/huffman-preview.png', '/images/huffman-coding-app.mp4'],
     tools: ['Java', 'Spring Boot', 'Maven', 'React.js', 'Netlify'],
     route: 'https://github.com/AminaK2724/HuffmanCode',
+  },
+  {
+    id: 'rpg-game',
+    title: 'RPG Game Simulator',
+    category: 'Full Stack Application',
+    year: '2022',
+    description: 'An interactive huffman encoding and decoding platform.',
+    redirectUrl: '/projects/huffman-code-app',
+    images: ['/images/huffman-preview.png', '/images/huffman-coding-app.mp4'],
+    tools: ['Java', 'Spring Boot', 'Maven', 'React.js', 'Netlify'],
+    route: 'https://github.com/AminaK2724/HuffmanCode',
+  },
+  {
+    id: 'planner-web-app',
+    title: 'Cohesive Planner Web App',
+    category: 'Project',
+    year: '2024',
+    description:
+      'A comprehensive and intuitive planner specifically designed for individuals with ADHD, helping you streamline daily tasks, track progress effortlessly, and stay organized in a way that works for you.',
+    redirectUrl: '/projects/planner-web-app',
+    images: ['ecommerce2.jpg'],
+    tools: ['React.js', 'CSS', 'Netlify'],
+    route: null,
   },
   {
     id: 'svg-animation-generator',
@@ -72,20 +95,7 @@ const projects = [
     tools: ['React.js', 'CSS', 'Netlify'],
     route: null,
   },
-  {
-    id: 'planner-web-app',
-    title: 'Cohesive Planner Web App',
-    category: 'Project',
-    year: '2024',
-    description:
-      'A comprehensive and intuitive planner specifically designed for individuals with ADHD, helping you streamline daily tasks, track progress effortlessly, and stay organized in a way that works for you.',
-    redirectUrl: '/projects/planner-web-app',
-    images: ['ecommerce2.jpg'],
-    tools: ['React.js', 'CSS', 'Netlify'],
-    route: null,
-  },
 ]
-
 
 const ProjectPage = () => {
   const { projectId } = useParams()
@@ -113,7 +123,7 @@ const ProjectPage = () => {
       <div className="project-page">
         <AllRoutesButton />
         <Link to="/work" className="projects-back">
-         ← Projects
+          ← Projects
         </Link>
         <section className="project-container">
           {/* Header Section */}

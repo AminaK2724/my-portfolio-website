@@ -1,22 +1,30 @@
-.about-me {
-  background-color: #021526;
+.bg {
+  position: relative;
+  overflow-y: auto; /* Allow vertical scrolling */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Reset margins for proper alignment */
+  padding: 0;
+  background: radial-gradient(circle, #5aa5c3, #0c6881, #072451);
+  background-size: 300% 300%;
+  animation: cornerMotion 10s linear infinite;
 }
 
+/* Corner-to-corner Motion Animation */
 @keyframes cornerMotion {
   0% {
-    background-position: top left;
+    background-position: top left; /* Start at top-left */
   }
   25% {
-    background-position: top right;
+    background-position: top right; /* Move to top-right */
   }
   50% {
-    background-position: bottom right;
+    background-position: bottom right; /* Move to bottom-right */
   }
   75% {
-    background-position: bottom left;
+    background-position: bottom left; /* Move to bottom-left */
   }
   100% {
-    background-position: top left;
+    background-position: top left; /* Return to top-left */
   }
 }
 
@@ -59,11 +67,12 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  height: 60%;
 }
 
 .me-image img {
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
