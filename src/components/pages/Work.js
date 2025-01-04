@@ -73,7 +73,7 @@ const projects = [
     year: '2024',
     description: 'A reusable background to make your webpages more interactive',
     redirectUrl: '/projects/ripple-bg-npm',
-    images: '/images/npm-ripple-bg-preview.png',
+    images: '/images/npm-ripple-bg-preview.gif',
     tags: ['NPM Package', 'Web Dev', 'Interactive Design'],
   },
   {
@@ -83,7 +83,7 @@ const projects = [
     year: '2024',
     description: 'A reusable button to seamlessly navigate across all available routes in your application.',
     redirectUrl: '/projects/all-routes-btn-npm',
-    images: '/images/npm-all-routes-btn-preview.png',
+    images: '/images/npm-all-routes-btn-preview.gif',
     tags: ['NPM Package', 'Navigation Tool', 'Reusable Component'],
   },
 ]

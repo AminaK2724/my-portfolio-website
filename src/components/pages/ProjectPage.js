@@ -83,7 +83,7 @@ const projects = [
     description:
       'An engaging and reusable animated background component designed to enhance user interaction and bring a dynamic visual appeal to your webpages.',
     redirectUrl: '/projects/ripple-bg-npm',
-    images: ['/images/npm-ripple-bg-preview.png'],
+    images: ['/images/npm-ripple-bg-preview.gif'],
     tools: ['React.js', 'Canvas API', 'JavaScript', 'NPM'],
     route: 'https://www.npmjs.com/package/npm-ripple-wave-bg',
     repo: 'https://github.com/AminaK2724/npm-ripple-wave-bg',
@@ -97,7 +97,7 @@ const projects = [
     description:
       'A customizable and reusable button component designed to provide seamless navigation across all available routes in your application.',
     redirectUrl: '/projects/all-routes-btn-npm',
-    images: ['/images/npm-all-routes-btn-preview.png'],
+    images: ['/images/npm-all-routes-btn-preview.gif'],
     tools: ['React.js', 'CSS', 'Netlify'],
     route: 'https://www.npmjs.com/package/npm-all-routes-button',
     repo: 'https://github.com/AminaK2724/npm-all-routes-btn',
