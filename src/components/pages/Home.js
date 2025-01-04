@@ -1,8 +1,8 @@
 import React from 'react'
-import '../styles/pages/Home.css'
-import AllRoutesButton from '../components/extras/AllRoutesBtn'
-import RippleBackground from '../components/common/RippleBackground'
-import Logo from '../components/extras/Logo'
+import '../../styles/pages/Home.css'
+import AllRoutesButton from '../extras/AllRoutesBtn'
+import RippleBackground from '../common/RippleBackground'
+import Logo from '../extras/Logo'
 
 export const Home = () => {
   const headingText = "Hello, I'm Amina."

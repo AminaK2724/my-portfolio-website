@@ -10,7 +10,7 @@
 
 /* Corner-to-corner Motion Animation */
 @keyframes cornerMotion {
-  0% {
+  0% { 
     background-position: top left; /* Start at top-left */
   }
   25% {
@@ -91,7 +91,7 @@
 /* Tablet and Laptop View: 2 cards per row */
 @media (min-width: 768px) {
   .projects-grid {
-  grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
     padding: 0 150px 150px 150px;
   }
 }

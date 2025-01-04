@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import '../styles/pages/AllRoutes.css'
-import AllRoutesBtn from '../components/extras/AllRoutesBtn'
-import RippleBackground from '../components/common/RippleBackground'
+import '../../styles/pages/AllRoutes.css'
+import AllRoutesBtn from '../extras/AllRoutesBtn'
+import RippleBackground from '../common/RippleBackground'
 
 const AllRoutes = () => {
   const [isVisible, setIsVisible] = useState(false)

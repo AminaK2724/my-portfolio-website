@@ -1,8 +1,8 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import '../styles/pages/Work.css'
-import AllRoutesButton from '../components/extras/AllRoutesBtn'
-import RippleBackground from '../components/common/RippleBackground'
+import '../../styles/pages/Work.css'
+import AllRoutesButton from '../extras/AllRoutesBtn'
+import RippleBackground from '../common/RippleBackground'
 
 const projects = [
   {
@@ -73,7 +73,7 @@ const projects = [
     year: '2024',
     description: 'A reusable background to make your webpages more interactive',
     redirectUrl: '/projects/ripple-bg-npm',
-    images: '/images/ripple-bg-preview.png',
+    images: '/images/npm-ripple-bg-preview.png',
     tags: ['NPM Package', 'Web Dev', 'Interactive Design'],
   },
   {

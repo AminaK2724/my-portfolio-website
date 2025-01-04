@@ -1,8 +1,8 @@
 import React from 'react'
-import RippleBackground from '../components/common/RippleBackground'
-import Timeline from '../components/about-me-sections/Timeline'
-import '../styles/pages/AboutMe.css'
-import AllRoutesButton from '../components/extras/AllRoutesBtn'
+import RippleBackground from '../common/RippleBackground'
+import Timeline from '../about-me-sections/Timeline'
+import '../../styles/pages/AboutMe.css'
+import AllRoutesButton from '../extras/AllRoutesBtn'
 
 const AboutMe = () => {
   return (

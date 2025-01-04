@@ -1,5 +1,5 @@
 .project-page {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   padding: 0 2rem 2rem 2rem;
   color: #ffffff;
@@ -97,6 +97,7 @@
 
 .project-button {
   padding: 0.8rem 1.5rem;
+  margin-right: 10px;
   background-color: #5aa5c3;
   color: white;
   text-decoration: none;
@@ -105,7 +106,7 @@
 }
 
 .project-button:hover {
-  background-color: #3b92a6;
+  background-color: #65daf5;
 }
 
 .project-button.disabled {
@@ -199,4 +200,57 @@
   background: #00e0ff;
   box-shadow: 0 0 10px #00e0ff, 0 0 20px #00e0ff;
   transform: scale(1.1);
+}
+
+.installation, .usage {
+  margin-top: 15px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.installation h3, .usage h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.install-code {
+  display: block;
+  background: #222;
+  padding: 10px;
+  color: #00ff99;
+  font-family: monospace;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+pre {
+  background: #222;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.project-links {
+  margin-top: 20px;
+}
+
+.project-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.project-button.secondary {
+  background-color: #008CBA;
+  color: white;
+}
+
+.project-button:hover {
+  opacity: 0.5;
 }

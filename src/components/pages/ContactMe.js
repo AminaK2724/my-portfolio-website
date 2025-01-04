@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react'
-import '../styles/pages/ContactMe.css'
+import '../../styles/pages/ContactMe.css'
 
 const ContactMe = () => {
   const sectionRef = useRef(null)
