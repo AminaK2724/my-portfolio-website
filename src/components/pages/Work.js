@@ -83,7 +83,7 @@ const projects = [
     year: '2024',
     description: 'A reusable button to seamlessly navigate across all available routes in your application.',
     redirectUrl: '/projects/all-routes-btn-npm',
-    images: '',
+    images: '/images/npm-all-routes-btn-preview.png',
     tags: ['NPM Package', 'Navigation Tool', 'Reusable Component'],
   },
 ]

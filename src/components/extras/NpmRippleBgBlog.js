@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/extras/NpmRippleBgBlog.css'
+import '../../styles/extras/Blogs.css'
 
 const NpmRippleBgBlog = () => {
   return (
@@ -62,14 +62,82 @@ const NpmRippleBgBlog = () => {
 
         {/* Live Preview */}
         <section>
-          <h2>🎥 Live Demo</h2>
-          <p>See it in action!</p>
+          <h2>🎥 See it in action!</h2>
+  
           <iframe
             src="https://codesandbox.io/embed/sssg36?view=preview&hidenavigation=1&theme=dark"
             style={{ width: '100%', height: '500px', border: '1px solid #00e0ff', borderRadius: '8px' }}
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
+        </section>
+
+        <section>
+          <h2>🎨 Customization</h2>
+          <p>
+            The <strong>RippleBackground</strong> component supports several props for customization:
+          </p>
+
+          <table className="customization-table">
+            <thead>
+              <tr>
+                <th>Prop Name</th>
+                <th>Type</th>
+                <th>Default Value</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <code>numWaves</code>
+                </td>
+                <td>number</td>
+                <td>4</td>
+                <td>Number of background wave layers</td>
+              </tr>
+              <tr>
+                <td>
+                  <code>rippleSize</code>
+                </td>
+                <td>number</td>
+                <td>1.5</td>
+                <td>Controls the size of each ripple</td>
+              </tr>
+              <tr>
+                <td>
+                  <code>backgroundColor</code>
+                </td>
+                <td>string</td>
+                <td>'rgba(0, 0, 0, 0.1)'</td>
+                <td>Sets the background color</td>
+              </tr>
+              <tr>
+                <td>
+                  <code>waveColor</code>
+                </td>
+                <td>string</td>
+                <td>'rgba(136, 172, 224, 0.3)'</td>
+                <td>Color of the waves</td>
+              </tr>
+              <tr>
+                <td>
+                  <code>zIndex</code>
+                </td>
+                <td>number</td>
+                <td>0</td>
+                <td>Z-index of the ripple background</td>
+              </tr>
+              <tr>
+                <td>
+                  <code>waveSpeed</code>
+                </td>
+                <td>number</td>
+                <td>800</td>
+                <td>Speed of the wave animations</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
 
         {/* Installation */}

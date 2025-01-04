@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 import '../../styles/pages/ProjectPage.css'
 import AllRoutesButton from '../extras/AllRoutesBtn'
 import NpmRippleBgBlog from '../extras/NpmRippleBgBlog'
+import NpmAllRoutesBtnBlog from '../extras/NpmAllRoutesBtnBlog'
 
 const projects = [
   {
@@ -86,27 +87,21 @@ const projects = [
     tools: ['React.js', 'Canvas API', 'JavaScript', 'NPM'],
     route: 'https://www.npmjs.com/package/npm-ripple-wave-bg',
     repo: 'https://github.com/AminaK2724/npm-ripple-wave-bg',
-    features: [
-      '✨ Smooth, interactive ripple animations',
-      '🎨 Customizable waves, colors, sizes, and speeds',
-      '📱 Fully responsive and lightweight',
-      '⚡ No external CSS required (Styled via inline styles)',
-    ],
-    installCommand: 'npm install npm-ripple-wave-bg',
-    usageCode: `<RippleBackground numWaves={5} rippleSize={2} backgroundColor="rgba(0, 0, 0, 0.1)" waveSpeed={500} />`,
-    badge: 'https://badge.fury.io/js/npm-ripple-wave-bg.svg',
+    blogComponent: <NpmRippleBgBlog />,
   },
   {
     id: 'all-routes-btn-npm',
     title: 'Reusable Routes Button',
-    category: 'Tool',
+    category: 'NPM Tool',
     year: '2024',
     description:
       'A customizable and reusable button component designed to provide seamless navigation across all available routes in your application.',
     redirectUrl: '/projects/all-routes-btn-npm',
-    images: ['ecommerce2.jpg'],
+    images: ['/images/npm-all-routes-btn-preview.png'],
     tools: ['React.js', 'CSS', 'Netlify'],
-    route: null,
+    route: 'https://www.npmjs.com/package/npm-all-routes-button',
+    repo: 'https://github.com/AminaK2724/npm-all-routes-btn',
+    blogComponent: <NpmAllRoutesBtnBlog />,
   },
 ]
 
@@ -192,8 +187,28 @@ const ProjectPage = () => {
               </div>
             </div>
           </div>
-          <NpmRippleBgBlog/>
+          {project.blogComponent && project.blogComponent}
         </section>
+        <footer className="project-footer">
+          {previousProject && (
+            <Link
+              to={`/projects/${previousProject.id}`} 
+              className="footer-link previous"
+              onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}
+            >
+              ← Previous Project
+            </Link>
+          )}
+          {nextProject && (
+            <Link
+              to={`/projects/${nextProject.id}`} 
+              className="footer-link next"
+              onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}
+            >
+              Next Project →
+            </Link>
+          )}
+        </footer>
       </div>
     </div>
   )

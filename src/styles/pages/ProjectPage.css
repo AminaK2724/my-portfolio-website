@@ -32,13 +32,13 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
   opacity: 0.8;
 }
-
+/* 
 .preview-image {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover; /* Ensure the image covers the space proportionally */
-  border-radius: 8px; /* Match the border-radius of the container */
-}
+  /* border-radius: 8px; Match the border-radius of the container */
+/* } */ 
 
 .project-details {
   display: flex;
