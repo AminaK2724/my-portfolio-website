@@ -65,6 +65,7 @@ const NpmRippleBgBlog = () => {
           <h2>🎥 See it in action!</h2>
   
           <iframe
+            title='npm-ripple-bg-live'
             src="https://codesandbox.io/embed/sssg36?view=preview&hidenavigation=1&theme=dark"
             style={{ width: '100%', height: '500px', border: '1px solid #00e0ff', borderRadius: '8px' }}
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

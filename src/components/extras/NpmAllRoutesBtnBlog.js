@@ -71,6 +71,7 @@ const NpmAllRoutesBtnBlog = () => {
         <section>
           <h2>🎥 See it in action!</h2>
           <iframe
+            title="npm-all-routes-btn-live"
             src="https://codesandbox.io/embed/wsdl2p?view=preview&hidenavigation=1&theme=dark"
             style={{ width: '100%', height: '500px', border: '1px solid #00e0ff', borderRadius: '8px' }}
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
