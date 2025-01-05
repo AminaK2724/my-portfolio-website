@@ -6,6 +6,16 @@ import RippleBackground from '../common/RippleBackground'
 
 const projects = [
   {
+    id: 'data-recovery',
+    title: 'Data Recovery App',
+    category: 'Full Stack Application',
+    year: '2024',
+    description: 'File recovery from corrupted storage',
+    redirectUrl: '/projects/data-recovery',
+    images: '',
+    tags: ['Accessibility', 'Text-to-Speech', 'React'],
+  },
+  {
     id: 'translation-app',
     title: 'Translation App',
     category: 'Personal Tool',

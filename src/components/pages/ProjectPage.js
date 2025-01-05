@@ -8,6 +8,18 @@ import KeepMeOnTrackBlog from '../extras/KeepMeOnTrackBlog'
 
 const projects = [
   {
+    id: 'data-recovery',
+    title: 'Data Recovery App',
+    category: 'Full Stack Application',
+    year: '2024',
+    description: 'File recovery from corrupted storage',
+    redirectUrl: '/projects/data-recovery',
+    images: '',
+    tools: [],
+    route: null,
+    blogComponent: '',
+  },
+  {
     id: 'translation-app',
     title: 'Translation Web App',
     category: 'Personal Tool',
