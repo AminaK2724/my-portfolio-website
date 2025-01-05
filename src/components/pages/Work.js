@@ -57,16 +57,6 @@ const projects = [
     tags: ['E-Commerce', 'UI/UX', 'React'],
   },
   {
-    id: 'maps-design',
-    title: 'Upgraded Map App',
-    category: 'UI/UX',
-    year: '2022',
-    description: 'A mock online store with modern UI/UX and seamless checkout features.',
-    redirectUrl: '/projects/maps-design',
-    images: '',
-    tags: ['Wireframe', 'Web Design', 'Prototyping'],
-  },
-  {
     id: 'ripple-bg-npm',
     title: 'Reusable Ripple Background',
     category: 'Tool',
@@ -74,7 +64,7 @@ const projects = [
     description: 'A reusable background to make your webpages more interactive',
     redirectUrl: '/projects/ripple-bg-npm',
     images: '/images/npm-ripple-bg-preview.gif',
-    tags: ['NPM Package', 'Web Dev', 'Interactive Design'],
+    tags: ['NPM', 'Web Dev', 'Interactive'],
   },
   {
     id: 'all-routes-btn-npm',
@@ -84,7 +74,17 @@ const projects = [
     description: 'A reusable button to seamlessly navigate across all available routes in your application.',
     redirectUrl: '/projects/all-routes-btn-npm',
     images: '/images/npm-all-routes-btn-preview.gif',
-    tags: ['NPM Package', 'Navigation Tool', 'Reusable Component'],
+    tags: ['NPM', 'Navigation Tool', 'Reusable'],
+  },
+  {
+    id: 'task-mgmt-design',
+    title: 'Upgraded Map App',
+    category: 'UI/UX',
+    year: '2022',
+    description: 'A mock online store with modern UI/UX and seamless checkout features.',
+    redirectUrl: '/projects/task-mgmt-design',
+    images: '/images/task-mgmt-prototype/Home-page.png',
+    tags: ['Wireframe', 'Web Design', 'Prototyping'],
   },
 ]
 

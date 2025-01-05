@@ -4,6 +4,7 @@ import '../../styles/pages/ProjectPage.css'
 import AllRoutesButton from '../extras/AllRoutesBtn'
 import NpmRippleBgBlog from '../extras/NpmRippleBgBlog'
 import NpmAllRoutesBtnBlog from '../extras/NpmAllRoutesBtnBlog'
+import KeepMeOnTrackBlog from '../extras/KeepMeOnTrackBlog'
 
 const projects = [
   {
@@ -65,17 +66,6 @@ const projects = [
     route: null,
   },
   {
-    id: 'maps-design',
-    title: 'Upgraded Map App',
-    category: 'UI/UX Design',
-    year: '2024',
-    description: 'A mock online store with modern UI/UX and seamless checkout features.',
-    redirectUrl: '/projects/maps-design',
-    images: ['ecommerce1.jpg', 'ecommerce2.jpg'],
-    tools: ['Figma', 'CSS', 'JavaScript'],
-    route: null,
-  },
-  {
     id: 'ripple-bg-npm',
     title: 'Reusable Ripple Background',
     category: 'NPM Tool',
@@ -102,6 +92,18 @@ const projects = [
     route: 'https://www.npmjs.com/package/npm-all-routes-button',
     repo: 'https://github.com/AminaK2724/npm-all-routes-btn',
     blogComponent: <NpmAllRoutesBtnBlog />,
+  },
+  {
+    id: 'task-mgmt-design',
+    title: 'Upgraded Map App',
+    category: 'UI/UX Design',
+    year: '2024',
+    description: 'A mock online store with modern UI/UX and seamless checkout features.',
+    redirectUrl: '/projects/task-mgmt-design',
+    images: ['/images/task-mgmt-prototype/Home-page.png'],
+    tools: ['Figma'],
+    route: null,
+    blogComponent: <KeepMeOnTrackBlog />,
   },
 ]
 
