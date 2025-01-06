@@ -5,6 +5,7 @@ import AllRoutesButton from '../extras/AllRoutesBtn'
 import NpmRippleBgBlog from '../extras/NpmRippleBgBlog'
 import NpmAllRoutesBtnBlog from '../extras/NpmAllRoutesBtnBlog'
 import KeepMeOnTrackBlog from '../extras/KeepMeOnTrackBlog'
+import DataRecoveryCaseStudy from '../extras/DataRecoveryCaseStudy'
 
 const projects = [
   {
@@ -17,7 +18,8 @@ const projects = [
     images: '',
     tools: [],
     route: null,
-    blogComponent: '',
+    repo: 'https://github.com/AminaK2724/data-recovery-tool',
+    blogComponent: <DataRecoveryCaseStudy/>,
   },
   {
     id: 'translation-app',
@@ -190,7 +192,7 @@ const ProjectPage = () => {
                   </a>
                 ) : (
                   <button disabled className="project-button disabled">
-                    Coming Soon!
+                    Live Coming Soon!
                   </button>
                 )}
                 {project.repo && (
