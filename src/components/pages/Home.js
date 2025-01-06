@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../styles/pages/Home.css'
 import AllRoutesButton from '../extras/AllRoutesBtn'
-import RippleBackground from '../common/RippleBackground'
+// import RippleBackground from '../common/RippleBackground'
 import Logo from '../extras/Logo'
 
 export const Home = () => {
