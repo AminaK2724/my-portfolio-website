@@ -13,10 +13,27 @@ body {
 #logo {
   position: absolute;
   top: 50%;
-  left: 45%;
+  left: 50%;
   width: 100%;
   height: 100%;
   transform: translate(-50%, -50%);
+}
+
+/* Tablet View (Width: 768px - 1024px) */
+@media (max-width: 1024px) {
+  #logo {
+    width: 70%; /* Reduce width for tablets */
+    height: auto; /* Maintain aspect ratio */
+    top: 40%;
+  }
+}
+
+/* Mobile View (Width: Below 768px) */
+@media (max-width: 768px) {
+  #logo {
+    width: 100%; /* Smaller size for mobile */
+    height: auto; /* Maintain aspect ratio */
+  }
 }
 
 #logo path {

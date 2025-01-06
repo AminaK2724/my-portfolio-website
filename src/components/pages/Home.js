@@ -10,7 +10,7 @@ export const Home = () => {
   return (
     <div className="about-me">
       <AllRoutesButton />
-      <RippleBackground />
+      {/* <RippleBackground /> */}
 
       <div className="about-me-logo">
         <Logo />
