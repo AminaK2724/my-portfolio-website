@@ -9,6 +9,24 @@
   overflow: hidden;
 }
 
+@keyframes cornerMotion {
+  0% {
+    background-position: top left;
+  }
+  25% {
+    background-position: top right;
+  }
+  50% {
+    background-position: bottom right;
+  }
+  75% {
+    background-position: bottom left;
+  }
+  100% {
+    background-position: top left;
+  }
+}
+
 .about-me-content {
   position: relative;
   left: 5%;
@@ -17,6 +35,7 @@
   z-index: 2;
   color: white;
   text-align: center; /* Center-align text for smaller screens */
+  /* max-width: 320px; */
 }
 
 @media (min-width: 1200px) {
@@ -39,7 +58,7 @@
 }
 
 .about-me-heading {
-  font-size: 4rem;
+  font-size: 2.2rem; /* Smaller size for 320px */
   font-weight: bold;
   margin-bottom: 1.5rem;
   font-family: 'Alex Brush', cursive;
@@ -66,40 +85,66 @@
 }
 
 .about-me-description {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.6;
   color: #e0e0e0;
   font-family: 'Roboto', sans-serif;
 }
 
-@keyframes cornerMotion {
-  0% {
-    background-position: top left;
-  }
-  25% {
-    background-position: top right;
-  }
-  50% {
-    background-position: bottom right;
-  }
-  75% {
-    background-position: bottom left;
-  }
-  100% {
-    background-position: top left;
-  }
-}
-
 .hero-btn {
-  position: relative;
-  z-index: 10;
-  padding: 0 4rem 0 0;
-  font-size: 20px;
+  display: inline-block;
+  font-size: 14px; /* Smaller for 320px */
+  padding: 0.5rem 1.5rem;
+  margin: 0 1rem 1rem 0;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 6px;
   color: #ffffff;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .hero-btn:hover {
   transform: scale(1.1);
   color: #5eb2d3;
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+  .about-me-heading {
+    font-size: 4rem;
+  }
+
+  .about-me-description {
+    font-size: 1.5rem;
+  }
+
+  .hero-btn {
+    font-size: 16px;
+    padding: 0.7rem 2rem;
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-me-content {
+    width: 50%;
+    left: 45%;
+    text-align: left;
+    padding: 2rem;
+    
+  }
+
+  .about-me-heading {
+    font-size: 4rem;
+  }
+
+  .about-me-description {
+    font-size: 1.5rem;
+  }
+  .hero-btn {
+    font-size: 16px;
+    padding: 0.7rem 2rem;
+    margin: 0 1rem 0 0;
+  }
 }
